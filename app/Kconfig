@@ -1,0 +1,42 @@
+mainmenu "Zephyr Course Application"
+
+menuconfig LED_SUBSYSTEM
+    bool "LED Subsystem"
+    default y
+
+if LED_SUBSYSTEM
+
+config LED_BLINK_SLEEP_MS
+    int "LED blink sleep time (ms)"
+    range 500 2000
+    default 1000
+
+config ADVANCED_LED_SETTINGS
+    bool "Advanced LED settings"
+
+if ADVANCED_LED_SETTINGS
+
+config LED_BRIGHTNESS
+    int "LED brightness (0-100)"
+    range 0 100
+    default 100
+
+config LED_FADE_DURATION
+    int "LED fade duration (ms)"
+    default 500
+
+menu "Expert settings"
+
+config LED_DEBUG
+    bool "Enable LED debugging"
+
+config LED_CUSTOM_PATTERN
+    bool "Custom blink pattern"
+
+endmenu # Expert settings
+
+endif # ADVANCED_LED_SETTINGS
+
+endif # LED_SUBSYSTEM
+
+source "Kconfig.zephyr"
