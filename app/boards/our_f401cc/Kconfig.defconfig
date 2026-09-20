@@ -1,0 +1,12 @@
+# Copyright (c) 2022 Linaro Limited
+# SPDX-License-Identifier: Apache-2.0
+
+# F401CE Black Pill based Our board board configuration
+
+if BOARD_OUR_F401CC
+
+config SPI_STM32_INTERRUPT
+	default y
+	depends on SPI
+
+endif # BOARD_OUR_F401CC

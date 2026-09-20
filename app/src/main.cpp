@@ -32,6 +32,6 @@ int main(void)
 /*
 Board commands:
     west build -t menuconfig
-    west build -b blackpill_f401cc app -p
+    west build -b our_f401cc app -p
     west flash
 */

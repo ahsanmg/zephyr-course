@@ -1,0 +1,15 @@
+identifier: our_f401cc
+name: Our Board (F401CC)
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - counter
+  - spi
+  - i2c
+  - uart
+  - pwm
+  - adc
+vendor: ahsan

@@ -1,0 +1,6 @@
+board:
+  name: our_f401cc
+  full_name: Our F401C V1.2
+  vendor: ahsan
+  socs:
+    - name: stm32f401xc
