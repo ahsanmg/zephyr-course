@@ -1,0 +1,2 @@
+config BOARD_OUR_F401CC2
+	select SOC_STM32F401XC
