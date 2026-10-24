@@ -1,0 +1,6 @@
+board:
+  name: scratch_f401cc
+  full_name: Custom board from Scratch
+  vendor: ahsan
+  socs:
+    - name: stm32f401xc

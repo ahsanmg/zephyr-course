@@ -30,8 +30,13 @@ int main(void)
 }
 
 /*
-Board commands:
+Our Board commands:
     west build -t menuconfig
     west build -b our_f401cc2 app -p
+    west flash
+
+From Scratch Board commands:
+    west build -t menuconfig
+    west build -b scratch_f401cc2 app -p
     west flash
 */
